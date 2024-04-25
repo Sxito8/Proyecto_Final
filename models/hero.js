@@ -18,11 +18,10 @@ const heromodels = {
     hero(
         HeroRank,
         Class,
-        Name,
-        Gender
+        Name
     )
     VALUES (
-        ?,?,?,?
+        ?,?,?
     )`,
 getByName:`
     SELECT 
@@ -44,13 +43,12 @@ getByRank:`
     updateHero:`
     UPDATE
     hero
-    SET
-        HeroRank = ?,
-        Class = ?,
-        Name = ?,
-        Gender = ?
-        WHERE 
-        id =?
+SET
+    HeroRank = ?,
+    Class = ?,
+    Name = ?
+WHERE
+    id = ?
     `,
 
     deleteRow:`

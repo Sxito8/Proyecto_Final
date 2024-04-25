@@ -68,16 +68,15 @@ const addHero =async(req = request, res= response)=>{
     const {
         HeroRank,
         Class,
-        Name,
-        Gender
+        Name
     } = req.body;
-    if (!HeroRank|| !Class|| !Name|| !Gender){
+    if (!HeroRank|| !Class|| !Name){
 res.status(400).json({msg:'Missing informarion'});
 return;
         }
        
 
-        const hero= [HeroRank, Class, Name, Gender]
+        const hero= [HeroRank, Class, Name]
 
        
     
@@ -128,16 +127,14 @@ const updateHero=async(req = request, res= response)=>{
     const {
         HeroRank,
         Class,
-        Name,
-        Gender 
+        Name
     } = req.body;
 
 const {id} = req.params;
 let newUserData=[
     HeroRank,
     Class,
-    Name,
-    Gender   
+    Name
 ];
 let conn;
 try{
@@ -175,8 +172,7 @@ if (RankUser){
 const oldUserData = [
     HeroExists.HeroRank,
     HeroExists.Class,
-    HeroExists.Name,
-    HeroExists.Gender,
+    HeroExists.Name
 ];
 
 newUserData.forEach((HeroData, index)=> {
