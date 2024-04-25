@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-04-2024 a las 05:49:03
+-- Tiempo de generación: 25-04-2024 a las 05:54:11
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -42,7 +42,10 @@ INSERT INTO `hero` (`HeroRank`, `Class`, `Name`, `id`) VALUES
 ('1', 'Clase-S', 'Saitamaa', 1),
 ('7', 'Clase-S', 'King', 2),
 ('14', 'Clase-S', 'Genos', 3),
-('2', 'Clase-S', 'Tornado', 4);
+('2', 'Clase-S', 'Tornado', 4),
+('3', 'Clase-S', 'Silver Fang', 5),
+('4', 'Clase-S', 'Atomic samurai', 6),
+('5', 'Clase-S', 'Kind Emperor', 7);
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +65,7 @@ ALTER TABLE `hero`
 -- AUTO_INCREMENT de la tabla `hero`
 --
 ALTER TABLE `hero`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
